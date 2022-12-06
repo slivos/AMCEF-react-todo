@@ -1,14 +1,14 @@
 {
-  "name": "react-app",
+  "homepage": "http://slivos.github.io/AMCEF-react-todo/",
+  "name": "react-todo-app",
   "private": true,
-  "homepage": "https://slivos.github.io/AMCEF-react-todo/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "tsc && vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
