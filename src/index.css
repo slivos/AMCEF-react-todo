@@ -1,0 +1,60 @@
+:root {
+	--home-image-background: linear-gradient(-45deg, #5ccfee 30%, #35495e80);
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #5ccfee #2A303C;
+}
+
+/* Targtes on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #2A303C;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #5ccfee;
+	border-radius: 20px;
+	border: 3px solid #2A303C
+}
+
+.img-container {
+	position: relative;
+	margin: 0 auto;
+}
+
+.img-bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	width: 192px;
+	height: 192px;
+	background-image: var(--home-image-background);
+	filter: blur(72px);
+	transform: translate(-50%, -50%);
+}
+
+.home-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 192px;
+	transform: translate(-50%, -50%);
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
