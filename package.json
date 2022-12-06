@@ -1,5 +1,5 @@
 {
-  "homepage": "http://slivos.github.io/AMCEF-react-todo/",
+  "homepage": "http://slivos.github.io/amcef-react-todo/",
   "name": "react-todo-app",
   "private": true,
   "version": "0.0.0",
@@ -7,9 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "preview": "vite preview"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
